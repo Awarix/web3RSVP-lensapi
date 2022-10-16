@@ -132,6 +132,7 @@ export default function Profile() {
                   {pubs.map((p, index) => (
                     <div key={p.id}>
                       <p className="font-bold">{p.__typename}</p>
+                      <p className={p.appId}>{p.appId}</p>
                       <p>{p.metadata.content}</p>
                       <p>{p.metadata.name}</p>
                     </div>
