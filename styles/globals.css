@@ -4,6 +4,25 @@
     margin: 0;
 }
 
+.widgets {
+    display: flex;
+    gap: 20px;
+    padding: 10px;
+}
+
+.features {
+    display: flex;
+    flex-direction: row;
+}
+
+.featured {
+    flex: 2;
+}
+
+.chart {
+    flex: 4;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

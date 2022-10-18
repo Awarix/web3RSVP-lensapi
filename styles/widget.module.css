@@ -1,0 +1,47 @@
+.widget {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex: 1;
+    padding: 10px;
+    -webkit-box-shadow: 2px 4px 10px 1px #000;
+    box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.5);
+    border-radius: 10px;
+    height: 100px;
+}
+
+.left, .right {
+    display: flex;
+    flex-direction: column;
+}
+
+.tittle {
+    font-weight: var(--fw-bold);
+    font-size: 14px;
+    color: rgb(160, 160, 160);
+}
+
+.counter {
+    font-size: 28px;
+    font-weight: 300;
+}
+
+.link {
+    font-size: 12px;
+    border-bottom: 1px solid gray;
+}
+
+.positive {
+    color: green;
+}
+
+.negative {
+    color: red;
+}
+
+.icon {
+    font-size: 18px;
+    padding: 5px;
+    background-color: rgba(128, 0, 128, 0.541);
+    align-self: flex-end;
+}
