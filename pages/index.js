@@ -8,6 +8,7 @@ import HeroSection from "../components/HeroSection";
 import Widget from "../components/Widget";
 import Featured from "../components/featured/Featured";
 import Chart from "../components/charts/Chart";
+import PieC from "../components/charts/PieC";
 
 export default function Home() {
   const [profiles, setProfiles] = useState([]);
@@ -39,8 +40,12 @@ export default function Home() {
         <Widget type="mirrors" />
       </div>
       <section className="features">
-        <div className="featured"><Featured /></div>
-        <div className="chart"> Chart<Chart /></div>
+        <div className="featured">
+          Pie chart
+          <PieC />
+        
+        </div>
+        <div className="chart"> Follow / Following<Chart /></div>
       </section>
       <div className="my-16 space-y-12 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-12 sm:space-y-0 md:grid-cols-3 md:gap-x-8 lg:grid-cols-4">
         {profiles.map((profile) => (

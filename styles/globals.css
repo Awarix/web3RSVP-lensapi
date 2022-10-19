@@ -21,6 +21,7 @@
 
 .chart {
     flex: 4;
+    text-align: center;
 }
 
 @tailwind base;
