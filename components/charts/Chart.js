@@ -11,7 +11,7 @@ const data = [
 
 const Chart = () => {
   return (
-    <div className='chart' style={{ width: "500px", height:"400px"}}>
+    <div className='chartHolder' style={{width: "100%", height: "500px"}}>
         <ResponsiveContainer >
         <AreaChart
           width={500}
@@ -19,9 +19,9 @@ const Chart = () => {
           data={data}
           margin={{
             top: 10,
-            right: 30,
-            left: 0,
-            bottom: 0,
+            right: 10,
+            left: 10,
+            bottom: 10,
           }}
         >
           <CartesianGrid strokeDasharray="3 3" stroke='lightgray'/>

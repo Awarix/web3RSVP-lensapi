@@ -1,0 +1,30 @@
+.statHolder {
+    display: flex;
+    flex-direction: column;
+    padding: var(--pd-def);
+    
+}
+
+.statTitle {
+    color: rgba(201, 201, 201, 0.8);
+}
+
+.statValue {
+    font-size: 20px;
+    color: #000;
+}
+
+.changeHolder {
+    display: flex;
+    flex-direction: row;
+    
+    font-size: 10px;
+}
+
+.changeRank {
+    color: rgba(201, 201, 201, 0.8);
+}
+
+.positive {
+    color: green;
+}

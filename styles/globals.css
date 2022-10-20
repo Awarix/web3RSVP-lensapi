@@ -4,6 +4,15 @@
     margin: 0;
 }
 
+:root {
+    --bs: 2px 4px 10px 1px rgba(201, 201, 201, 0.5);
+
+    --br: 10px;
+
+    --pd-def: 0.5rem;
+    
+}
+
 .widgets {
     display: flex;
     gap: 20px;
@@ -13,15 +22,31 @@
 .features {
     display: flex;
     flex-direction: row;
+    padding: var(--pd-def);
+    gap: 20px;
 }
 
 .featured {
     flex: 2;
+    box-shadow: var(--bs);
+    padding: var(--pd-def);
+    text-align: center;
+    border-radius: var(--br);
 }
 
 .chart {
     flex: 4;
     text-align: center;
+    box-shadow: var(--bs);
+    padding: var(--pd-def);
+    border-radius: var(--br);
+}
+
+
+.holder {
+    display: flex;
+    justify-content: row;
+    gap: 20px;
 }
 
 @tailwind base;
