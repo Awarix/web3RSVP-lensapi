@@ -6,6 +6,8 @@ import { useState, useEffect } from "react";
 import { client, getProfileById, getPublicationsById } from "../../api";
 import ABI from "../../abi.json";
 import { ethers } from "ethers";
+import Chart from "../../components/charts/Chart";
+import Lchart from "../../components/charts/Lchart";
 
 const CONTRACT_ADDRESS = "0x60Ae865ee4C725cd04353b5AAb364553f56ceF82";
 
@@ -67,6 +69,7 @@ export default function Profile() {
         <title>{profile ? profile.handle : "Lensbook"}</title>
       </Head>
       <div className="my-12">
+        
         {profile && (
           <div className="flex flex-wrap md:flex-nowrap items-start w-full">
             <div className="w-full md:w-auto mb-4 md:mr-8">
@@ -104,6 +107,8 @@ export default function Profile() {
                   <p>
                     <span className="text-gray-900 font-medium">
                       {profile.stats.totalFollowing}
+                      <Lchart follow={profile.stats.totalFollowers} following={profile.stats.totalFollowing}/>
+                      
                     </span>{" "}
                     Following
                   </p>
@@ -145,4 +150,8 @@ export default function Profile() {
       </div>
     </Layout>
   );
+}
+
+const superfun = {
+  color: "red",
 }

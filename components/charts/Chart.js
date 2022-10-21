@@ -9,14 +9,18 @@ const data = [
     { date: '18.10', follow: 281, following: 758 },
   ];
 
-const Chart = () => {
+const Chart = (props) => {
+  const newData = [
+    { date: '14.10', follow: props.follow, following: props.following },
+    { date: '15.10', follow: 222, following: 128 }
+  ]
   return (
     <div className='chartHolder' style={{width: "100%", height: "500px"}}>
         <ResponsiveContainer >
         <AreaChart
           width={500}
           height={400}
-          data={data}
+          data={newData}
           margin={{
             top: 10,
             right: 10,
